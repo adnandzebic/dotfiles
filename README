@@ -1,0 +1,4 @@
+# My dotfiles
+
+# Installation
+git clone --recursive https://github.com/adnandzebic/dotfiles

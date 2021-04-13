@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#
+# Shows volume using notify-send, awk, and amixer
+#
+notify-send -t 0 "`amixer get Master | awk 'NR==5 {print "vol " $4, $6}'`"

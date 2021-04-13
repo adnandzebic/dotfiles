@@ -1,0 +1,6 @@
+*.txt
+*.crc
+*.bin
+*.hex
+tags
+test_*

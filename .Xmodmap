@@ -1,0 +1,12 @@
+! clear Lock
+! add Control = Caps_Lock
+
+! clear Control
+! 
+! add Control = Caps_Lock Control_L Control_R
+
+remove Lock = Caps_Lock
+! remove mod4 = Super_L
+keysym Caps_Lock = Control_L
+! add mod4 = Super_L
+add Control = Control_L

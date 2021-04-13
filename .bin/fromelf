@@ -1,0 +1,4 @@
+#!/bin/bash
+
+wine /home/adnan/.PlayOnLinux/wineprefix/Test/dosdevices/c:/Keil_v5/ARM/ARMCC/bin/fromelf.exe "$@"
+

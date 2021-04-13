@@ -1,0 +1,24 @@
+[core]
+	autocrlf = false
+[http]
+	cookiefile = /home/adnan/.gitcookies
+[diff]
+	tool = vimdiff
+	; tool = bcompare
+[merge]
+	tool = vimdiff
+	; tool = bcompare
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+[difftool "bcompare"]
+	trustExitCode = true
+	cmd = "/usr/bin/bcompare" \"$LOCAL\" \"$REMOTE\"
+[mergetool "bcompare"]
+	trustExitCode = true
+	cmd = "/usr/bin/bcompare" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+[core]
+	autocrlf = false
+[http]
+	cookiefile = /home/adnan/.gitcookies

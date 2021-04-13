@@ -1,0 +1,72 @@
+# Ignore everything by default
+*
+
+# Exception for git submodules
+!.gitmodules
+
+# Exception for readme
+!README
+
+# Exception for vimrc
+!.vimrc
+
+# Exception for vim plugins
+!.vim
+!.vim/*
+!.vim/*/*
+!.vim/*/*/*
+!.vim/*/*/*/*
+!.vim/*/*/*/*/*
+!.vim/*/*/*/*/*/*
+
+# Exception for bashrc
+!.bashrc
+
+# Exception for gitignore itself (!)
+!.gitignore
+
+# Exception for gitconfig
+!.gitconfig
+
+# Exception for .bin folder
+!.bin
+!.bin/*
+
+# Exception for tmux
+!.tmux.conf
+
+# Exception for X11 stuff
+!.Xdefaults
+!.Xmodmap
+!.xinitrc
+
+# Exception for config folder
+!.config
+!.config/bspwm
+!.config/bspwm/bspwmrc
+!.config/sxhkd
+!.config/sxhkd/sxhkdrc
+!.config/zathura
+!.config/zathura/zathurarc
+!.config/sxhkd/vol-notify				# not really used anymore on new laptop
+!.config/nvim
+!.config/nvim/coc-settings.json
+
+# Exception for .useful-commands
+!.useful-commands
+
+# Exception for agignore
+!.agignore
+
+# Exception for screenlayout
+!.screenlayout
+!.screenlayout/home-2-monitors.sh
+
+# Exception for scripts
+!.scripts
+!.scripts/*
+!.scripts/*/*
+!.scripts/*/*/*
+!.scripts/*/*/*/*
+!.scripts/*/*/*/*/*
+!.scripts/*/*/*/*/*/*

@@ -1,0 +1,93 @@
+#
+# wm independent hotkeys
+#
+#
+
+# make sxhkd reload its configuration files:
+control + Escape
+	pkill -USR1 -x sxhkd
+
+F11
+	bspc node -t ~fullscreen
+
+# close and kill
+alt + F4
+	bspc node -{c,k}
+
+~super + Tab
+	bspc desktop -f next
+
+~super + shift + Tab
+	bspc desktop -f prev
+
+# will only run on release
+~@Super_L
+	rofi -show run
+
+control + Return
+	konsole
+
+alt + Tab
+	bspc node -f next
+	# rofi -show window -show icons
+
+alt + shift + Tab
+	bspc node -f prev
+
+# hide window
+~super + Down
+	bspc node --flag hidden=on
+
+# unhide last window and move it to focused desktop
+~super + Up
+	id=$(bspc query -N -n .hidden | tail -n1); bspc node ${id} -g hidden=off --to-desktop focused --follow; bspc node --focus ${id}
+
+control + space; n
+	bspc node -s next
+#    playerctl next                            # skip to next spotify song
+
+control + space; p
+	bspc node -s prev
+#    playerctl previous                        # skip to next spotify song
+
+control + space; n
+	bspc node -s next
+#    playerctl next                            # skip to next spotify song
+
+control + space; p
+	bspc node -s prev
+#    playerctl previous                        # skip to next spotify song
+
+control + space; o
+	rofi -show run
+#	dmenu_run
+
+control + space; m
+	mupdf_run
+
+control + space; u
+	mplayer_run
+
+control + space; v
+	vim_run
+
+control + space; g
+	urxvt -e ranger
+
+XF86Sleep
+	sudo pm-suspend
+
+XF86AudioMute
+	amixer set Master toggle && vol-notify
+
+XF86AudioRaiseVolume
+	amixer set Master 10%+ && vol-notify
+
+XF86AudioLowerVolume
+	amixer set Master 10%- && vol-notify
+
+Print
+	flameshot gui
+    # gnome-screenshot -acf /tmp/test && cat /tmp/test | xclip -i -selection clipboard -target image/png
+	# scrot -s
+

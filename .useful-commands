@@ -1,0 +1,6 @@
+# Save git credentials
+git config credential.helper store
+
+# Save email and name to .git/config (per repository)
+git config user.email "email [at] company.com"
+git config user.name "First Last"
